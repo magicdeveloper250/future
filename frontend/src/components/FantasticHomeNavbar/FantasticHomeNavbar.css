@@ -1,0 +1,161 @@
+.toolbar-container{
+  display:flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.search-box *, .search-box{
+  background-color: #111C2F;
+  
+}
+.search-box{
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.search-box input:focus{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    
+ 
+}
+.fantstic-nav-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .navbar-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .fantstic-nav-container .links-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .menu-text{
+    background:linear-gradient(45deg, var(--primary-site-color), rgba(0, 0, 0, 0.599));
+   
+  }
+  
+  .link-item {
+    padding: 0 1em;
+  }
+  .login-text{
+    display: none;
+  }
+  .link-item a {
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    color: rgb(231, 230, 230);
+  }
+  
+  .link-item a.active {
+  
+    color:  white;
+    background-color: #101223;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+  }
+ 
+  .menu-close{
+    display: none;
+  }
+  .link-item.btn{
+    background-color: rgb(231, 230, 230);
+    border: none;
+    padding-inline: 20px;
+    padding-block: 8px;
+    color: black;
+    font-size: var(--font-size-sm);
+    border-radius: 50px;
+  }
+  .link-item.btn:hover{
+    opacity: 0.7;
+  }
+ 
+
+
+  .mobile-menu-btn{
+    display: none !important;
+    width: fit-content;
+    margin-inline: 1em;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 10px 1px;
+    background-color:rgba(3, 30, 70, 0.862);
+
+  }
+
+   
+  
+  .navbar-container.scrolled{
+    background-color: #111C2F;
+
+  }
+
+
+  .mobile-drawer{
+    background-color:rgba(3, 30, 70, 0.862) ;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+
+
+    .navbar-container .nav-header{
+      font-size: 0.9em;
+     }
+     .navbar-brand{
+      width: 70%;
+     }
+    
+    .mobile-menu-btn{
+      display: block !important;
+      color: rgba(255, 255, 255, 0.84);
+    }
+    
+    
+    .fantstic-nav-container .links-container{
+      display: none;
+  
+
+    } 
+    .search-controls{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+    .toolbar-container{
+      display: flex;
+      width: 100vw;
+      padding-inline: 0px;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+    }
+     
+
+
+
+   
+  }
+  
